@@ -71,7 +71,8 @@ for i, instance in enumerate(db):
         num_incorrect += 1
 
     #compare the prediction with the true label of the test instance to start calculating the error rate.
-print('The error rate is =', num_correct/float(num_incorrect+num_correct))
+print('The accuracy is =', num_correct/float(num_incorrect+num_correct))
+print('The error rate is =', 1 - (num_correct/float(num_incorrect+num_correct)))
 #print the error rate
 
 
